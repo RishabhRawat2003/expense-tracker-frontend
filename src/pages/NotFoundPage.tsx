@@ -1,0 +1,13 @@
+import { Link } from 'react-router-dom';
+
+export default function NotFoundPage() {
+  return (
+    <div className="flex min-h-dvh flex-col items-center justify-center gap-3 px-4 text-center">
+      <p className="text-5xl font-bold text-brand-600">404</p>
+      <p className="text-slate-600">This page doesn't exist.</p>
+      <Link to="/" className="text-sm font-medium text-brand-600 hover:underline">
+        Back to dashboard
+      </Link>
+    </div>
+  );
+}
